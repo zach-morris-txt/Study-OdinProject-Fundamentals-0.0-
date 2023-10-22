@@ -1,0 +1,41 @@
+[GIT WORKFLOW REVIEW]
+    Create new repository in GitHub and clone down (assuming new project)
+        git clone 'repository-clone-link'
+    Enter repository project folder
+        cd 'repository-directory-name'
+    Typical to establish a new branch for each feature to avoid clutter on 'main'
+        git branch -m 'name-of-branch'
+    Add changes and commit them with descriptive message *commit at every significant development*
+        git add .   AND    git commit -m "message"
+    Push commits up to GitHub
+        git push origin head
+    Pull request
+    **Resolve conflicts
+    **Typical development automation/tests
+    ******CRITICAL SKILL: Code review  --> Merge
+    Merge available only after development team approval
+
+[GIT WORKFLOW REVIEW, LOCAL CODE]
+    Within root directory of project, initialize git repository
+        git init -b main
+    Add files such that they are staged for commit
+        git add .
+    Commit files
+        git commit -m "message"
+    Create new repository within GitHub *without initializing to avoid issues*
+    Copy remote respoitory URL (HTTPS typically)
+    Connect local to repository URL
+        git remote add origin 'copied URL'
+    Verify
+        git remote -Verify
+    Push changes
+        git push origin main
+
+[HELPFUL]
+    Check condition of repository and commits *items in red are not yet staged*
+        git status
+        git log
+    Add specific items
+        git add 'name-of-item'
+    Add file in directory using terminal
+        touch 'name-of-file.file-extension'
