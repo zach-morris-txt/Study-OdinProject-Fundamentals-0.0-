@@ -1,3 +1,52 @@
+[INITIAL NOTES]
+    Note client-side v. server-side programming/websites
+    Ruby-on-rails (RoR) vs Javascript?
+        RoR is a framework written in Ruby for server-side programming
+
+    What is the internet?
+        Network of computers. Development started in 1960s as a US army 
+        project. Evolved into a public infrastructure in the 1980s via 
+        university and private companies.
+        Internet communications are broken into packets for speed and
+        function.
+        Everything connected to the internet has an IP address
+        Routers and servers are the computers that build the internet
+        Domain name - human readable name for specific IPs (internet 
+        protocol, collection of numbers)
+    What is a client?
+        Home computers are examples of clients. Clients are computers
+        which are connected indirectly to the internet via ISP (internet 
+        service providers).
+    What is a router?
+        Like a signaler at a railway station, it directs packets to their 
+        proper IPs
+    What is a modem?
+        A piece of technology that converts router information into a 
+        format that can be communicated along the telecommunications 
+        network, thus we don't need a new system of wiring across 
+        millions of homes but can use the pre-existing telecommunications.
+    Search engine are websites that allows searching of the internet.
+    Web browsers are the software that allow your computer to visit websites.
+    DNS (Domain Name System) - addresss book for website IPs
+    HTTP (Hypertext Transmission Protocol) - protocol that defines language 
+        for clients and servers to speak to each other.
+
+    Code Files vs Assets -he code that builds the projects with the additional
+        resources the code uses (images, music, video, Word documents, PDFs)
+    Parsing Order: HTML first, looks for links to stylesheets (CSS), then links
+        for scrips (JS)
+    Browser produces an in-memory DOM, in-memory CSSOM, then parses and executes
+        the JS
+
+    HTTP was developed to standardize client-server communications. Effectively, 
+        it is a globally accepted standard for coordinating internet packages.
+        It is a stateless protocol, meaning, it does not have keep previous 
+        response/requests in memory which make the transfers sturdier and easier
+        as the server does not have to hang on to information. 
+        There are tools that work alongside HTTP that make it appear stateful, 
+        but these are only work-around mechanisms.
+
+
 [GIT WORKFLOW REVIEW]
     Create new repository in GitHub and clone down (assuming new project)
         git clone 'repository-clone-link'
@@ -15,6 +64,7 @@
     ******CRITICAL SKILL: Code review  --> Merge
     Merge available only after development team approval
 
+
 [GIT WORKFLOW REVIEW, LOCAL CODE]
     Within root directory of project, initialize git repository
         git init -b main
@@ -31,7 +81,8 @@
     Push changes
         git push origin main
 
-[HELPFUL]
+
+[GIT HELPFUL]
     Check condition of repository and commits *items in red are not yet staged*
         git status
         git log
